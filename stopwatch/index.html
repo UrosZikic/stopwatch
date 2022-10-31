@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .hero {
+        display: flex;
+        font-size: 30px;
+        justify-content: center;
+      }
+      .main {
+        display: grid;
+        grid-template-columns: 50px 50px 50px;
+        column-gap: 5px;
+        justify-content: center;
+      }
+      button {
+        width: 50px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="hero">
+      <div class="minutes">0</div>
+      <div>:</div>
+      <div class="seconds">00</div>
+      <div>:</div>
+      <div class="tens">00</div>
+    </div>
+    <div class="main">
+      <button class="start">start</button>
+      <button class="pause" onclick="pauseIt()">pause</button>
+      <button class="restart">restart</button>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
